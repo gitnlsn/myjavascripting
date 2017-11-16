@@ -1,0 +1,36 @@
+
+# JAVASCRIPTING
+
+## FOR LOOP (Exercise 10 of 19)
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+
+# THE TOTAL IS 45
+
+ That is a basic introduction to for loops, which are handy in a number of
+ situations, particularly in combination with other data types like strings
+ and arrays.
+
+ In the next challenge we'll start working with arrays.
+
+ Run javascripting in the console to choose the next challenge.
+
+─────────────────────────────────────────────────────────────────────────────
+ You have 9 challenges left.
+
+ Type 'javascripting' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+ Need help? View the README for this workshop:
+ (http://github.com/sethvincent/javascripting)
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: javascripting print
+  » To execute your program in a test environment, run: javascripting run
+    program.js
+  » To verify your program, run: javascripting verify program.js
+  » For help run: javascripting help
+

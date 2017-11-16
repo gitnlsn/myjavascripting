@@ -1,0 +1,34 @@
+
+# JAVASCRIPTING
+
+## ARRAYS (Exercise 11 of 19)
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+
+# YAY, A PIZZA ARRAY!
+
+ You successfully created an array!
+
+ In the next challenge we will explore filtering arrays.
+
+ Run javascripting in the console to choose the next challenge.
+
+─────────────────────────────────────────────────────────────────────────────
+ You have 8 challenges left.
+
+ Type 'javascripting' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+ Need help? View the README for this workshop:
+ (http://github.com/sethvincent/javascripting)
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: javascripting print
+  » To execute your program in a test environment, run: javascripting run
+    program.js
+  » To verify your program, run: javascripting verify program.js
+  » For help run: javascripting help
+
