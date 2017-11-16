@@ -1,4 +1,1 @@
-this is the readme.md file
-
-
-this is a modification.
+In this repository, I'm learning javascript through NodeSchool workshop!
