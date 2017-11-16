@@ -1,0 +1,34 @@
+
+# JAVASCRIPTING
+
+## NUMBER TO STRING (Exercise 8 of 19)
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+
+# THAT NUMBER IS NOW A STRING!
+
+ Excellent. Good work converting that number into a string.
+
+ In the next challenge we will take a look at if statements.
+
+ Run javascripting in the console to choose the next challenge.
+
+─────────────────────────────────────────────────────────────────────────────
+ You have 11 challenges left.
+
+ Type 'javascripting' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+ Need help? View the README for this workshop:
+ (http://github.com/sethvincent/javascripting)
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: javascripting print
+  » To execute your program in a test environment, run: javascripting run
+    program.js
+  » To verify your program, run: javascripting verify program.js
+  » For help run: javascripting help
+
