@@ -1,0 +1,44 @@
+
+# LEARN YOU THE NODE.JS FOR MUCH WIN!
+
+## HELLO WORLD (Exercise 1 of 13)
+
+
+Your submission results compared to the expected:
+
+                 ACTUAL                                 EXPECTED                
+────────────────────────────────────────────────────────────────────────────────
+
+   "HELLO WORLD"                       ==    "HELLO WORLD"                      
+   ""                                  ==    ""                                 
+
+────────────────────────────────────────────────────────────────────────────────
+
+ ✓
+
+ Submission results match expected
+
+
+# PASS
+
+ Your solution to HELLO WORLD passed!
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+
+    console.log('HELLO WORLD')
+
+─────────────────────────────────────────────────────────────────────────────
+ You have 12 challenges left.
+
+ Type 'learnyounode' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: learnyounode print
+  » To execute your program in a test environment, run: learnyounode run
+    program.js
+  » To verify your program, run: learnyounode verify program.js
+  » For help run: learnyounode help
+

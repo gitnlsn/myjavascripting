@@ -1,0 +1,50 @@
+
+# LEARN YOU THE NODE.JS FOR MUCH WIN!
+
+## BABY STEPS (Exercise 2 of 13)
+
+
+Your submission results compared to the expected:
+
+                 ACTUAL                                 EXPECTED                
+────────────────────────────────────────────────────────────────────────────────
+
+   "162"                               ==    "162"                              
+   ""                                  ==    ""                                 
+
+────────────────────────────────────────────────────────────────────────────────
+
+ ✓
+
+ Submission results match expected
+
+
+# PASS
+
+ Your solution to BABY STEPS passed!
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+
+    var result = 0
+    
+    for (var i = 2; i < process.argv.length; i++) {
+      result += Number(process.argv[i])
+    }
+    
+    console.log(result)
+
+─────────────────────────────────────────────────────────────────────────────
+ You have 11 challenges left.
+
+ Type 'learnyounode' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: learnyounode print
+  » To execute your program in a test environment, run: learnyounode run
+    program.js
+  » To verify your program, run: learnyounode verify program.js
+  » For help run: learnyounode help
+
