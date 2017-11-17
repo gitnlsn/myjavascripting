@@ -1,0 +1,58 @@
+
+# LEARN YOU THE NODE.JS FOR MUCH WIN!
+
+## MY FIRST ASYNC I/O! (Exercise 4 of 13)
+
+
+Your submission results compared to the expected:
+
+                 ACTUAL                                 EXPECTED                
+────────────────────────────────────────────────────────────────────────────────
+
+   "40"                                ==    "40"                               
+   ""                                  ==    ""                                 
+
+────────────────────────────────────────────────────────────────────────────────
+
+ ✓
+
+ Submission results match expected
+
+ ✓
+
+ Used asynchronous method: fs.readFile()
+
+
+# PASS
+
+ Your solution to MY FIRST ASYNC I/O! passed!
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+
+    var fs = require('fs')
+    var file = process.argv[2]
+    
+    fs.readFile(file, function (err, contents) {
+      if (err) {
+        return console.log(err)
+      }
+      // fs.readFile(file, 'utf8', callback) can also be used
+      var lines = contents.toString().split('\n').length - 1
+      console.log(lines)
+    })
+
+─────────────────────────────────────────────────────────────────────────────
+ You have 9 challenges left.
+
+ Type 'learnyounode' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: learnyounode print
+  » To execute your program in a test environment, run: learnyounode run
+    program.js
+  » To verify your program, run: learnyounode verify program.js
+  » For help run: learnyounode help
+
