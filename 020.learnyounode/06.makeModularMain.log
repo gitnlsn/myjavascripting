@@ -1,0 +1,131 @@
+
+# LEARN YOU THE NODE.JS FOR MUCH WIN!
+
+## MAKE IT MODULAR (Exercise 6 of 13)
+
+
+Your submission results compared to the expected:
+
+                 ACTUAL                                 EXPECTED                
+────────────────────────────────────────────────────────────────────────────────
+
+   "CHANGELOG.md"                      ==    "CHANGELOG.md"                     
+   "LICENCE.md"                        ==    "LICENCE.md"                       
+   "README.md"                         ==    "README.md"                        
+   ""                                  ==    ""                                 
+
+────────────────────────────────────────────────────────────────────────────────
+
+ ✓
+
+ Submission results match expected
+
+Error: testing
+    at Exercise.validateModule (/usr/lib/node_modules/learnyounode/exercises/make_it_modular/verify.js:12:15)
+    at Exercise.verifyModuleUsed (/usr/lib/node_modules/learnyounode/exercises/make_it_modular/verify.js:207:18)
+    at Exercise.verify (/usr/lib/node_modules/learnyounode/exercises/make_it_modular/verify.js:219:20)
+    at Exercise.<anonymous> (/usr/lib/node_modules/learnyounode/node_modules/workshopper-exercise/exercise.js:40:8)
+    at next (/usr/lib/node_modules/learnyounode/node_modules/workshopper-exercise/exercise.js:188:19)
+    at /usr/lib/node_modules/learnyounode/node_modules/workshopper-exercise/exercise.js:195:7
+    at /usr/lib/node_modules/learnyounode/node_modules/workshopper-wrappedexec/wrappedexec.js:56:9
+    at FSReqWrap.oncomplete (fs.js:135:15)
+ ✓
+
+ Additional module file exports a single function
+
+ ✓
+
+ Additional module file exports a function that takes 3 arguments
+
+ ✓
+
+ Additional module file handles errors properly
+
+ ✓
+
+ Additional module file handles callback argument
+
+ ✓
+
+ Additional module file returned two arguments on the callback function
+
+ ✓
+
+ Additional module file returned an Array as the second argument of the
+ callback
+
+ ✓
+
+ Additional module file correctly handles '.'-prefixed extension
+
+ ✓
+
+ Additional module file returned correct number of elements as the second
+ argument of the callback
+
+ ✓
+
+ Additional module file returned correct list of files as the second
+ argument of the callback
+
+
+# PASS
+
+ Your solution to MAKE IT MODULAR passed!
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+ _/usr/lib/node_modules/learnyounode/exercises/make_it_modular/solution/sol
+ ution.js_ :
+
+
+    var filterFn = require('./solution_filter.js')
+    var dir = process.argv[2]
+    var filterStr = process.argv[3]
+    
+    filterFn(dir, filterStr, function (err, list) {
+      if (err) {
+        return console.error('There was an error:', err)
+      }
+    
+      list.forEach(function (file) {
+        console.log(file)
+      })
+    })
+
+─────────────────────────────────────────────────────────────────────────────
+ _/usr/lib/node_modules/learnyounode/exercises/make_it_modular/solution/sol
+ ution_filter.js_ :
+
+
+    var fs = require('fs')
+    var path = require('path')
+    
+    module.exports = function (dir, filterStr, callback) {
+      fs.readdir(dir, function (err, list) {
+        if (err) {
+          return callback(err)
+        }
+    
+        list = list.filter(function (file) {
+          return path.extname(file) === '.' + filterStr
+        })
+    
+        callback(null, list)
+      })
+    }
+
+─────────────────────────────────────────────────────────────────────────────
+ You have 7 challenges left.
+
+ Type 'learnyounode' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: learnyounode print
+  » To execute your program in a test environment, run: learnyounode run
+    program.js
+  » To verify your program, run: learnyounode verify program.js
+  » For help run: learnyounode help
+
