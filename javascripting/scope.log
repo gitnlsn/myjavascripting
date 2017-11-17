@@ -1,0 +1,29 @@
+
+# JAVASCRIPTING
+
+## SCOPE (Exercise 19 of 19)
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+ #EXCELLENT!
+
+ You got it! The second function has the scope we were looking for.
+
+ Run javascripting in the console to choose the next challenge.
+
+─────────────────────────────────────────────────────────────────────────────
+ You've finished all the challenges! Hooray!
+
+─────────────────────────────────────────────────────────────────────────────
+ Need help? View the README for this workshop:
+ (http://github.com/sethvincent/javascripting)
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: javascripting print
+  » To execute your program in a test environment, run: javascripting run
+    program.js
+  » To verify your program, run: javascripting verify program.js
+  » For help run: javascripting help
+

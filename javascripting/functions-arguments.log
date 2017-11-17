@@ -1,0 +1,32 @@
+
+# JAVASCRIPTING
+
+## FUNCTION ARGUMENTS (Exercise 18 of 19)
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+
+# YOU'RE IN CONTROL OF YOUR ARGUMENTS!
+
+ Well done completing the exercise.
+
+ Run javascripting in the console to choose the next challenge.
+
+─────────────────────────────────────────────────────────────────────────────
+ You have one challenge left.
+
+ Type 'javascripting' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+ Need help? View the README for this workshop:
+ (http://github.com/sethvincent/javascripting)
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: javascripting print
+  » To execute your program in a test environment, run: javascripting run
+    program.js
+  » To verify your program, run: javascripting verify program.js
+  » For help run: javascripting help
+
