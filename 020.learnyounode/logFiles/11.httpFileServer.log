@@ -1,0 +1,56 @@
+
+# LEARN YOU THE NODE.JS FOR MUCH WIN!
+
+## HTTP FILE SERVER (Exercise 11 of 13)
+
+
+Your submission results compared to the expected:
+
+────────────────────────────────────────────────────────────────────────────────
+
+1.  ACTUAL:    "As dry as a stickybeak and grab us a piker. Grab us a galah bloody you little ripper galah. She'll be right coathanger flamin gutful of billabong. Flat out like a stonkered piece of piss as stands out like roo bar."
+1.  EXPECTED:  "As dry as a stickybeak and grab us a piker. Grab us a galah bloody you little ripper galah. She'll be right coathanger flamin gutful of billabong. Flat out like a stonkered piece of piss as stands out like roo bar."
+
+2.  ACTUAL:    ""
+2.  EXPECTED:  ""
+
+
+────────────────────────────────────────────────────────────────────────────────
+
+ ✓
+
+ Submission results match expected
+
+
+# PASS
+
+ Your solution to HTTP FILE SERVER passed!
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+
+    var http = require('http')
+    var fs = require('fs')
+    
+    var server = http.createServer(function (req, res) {
+      res.writeHead(200, { 'content-type': 'text/plain' })
+    
+      fs.createReadStream(process.argv[3]).pipe(res)
+    })
+    
+    server.listen(Number(process.argv[2]))
+
+─────────────────────────────────────────────────────────────────────────────
+ You have 2 challenges left.
+
+ Type 'learnyounode' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: learnyounode print
+  » To execute your program in a test environment, run: learnyounode run
+    program.js
+  » To verify your program, run: learnyounode verify program.js
+  » For help run: learnyounode help
+
