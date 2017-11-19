@@ -20,7 +20,7 @@ module.exports = function (dirName, extension, node){
          if (aux_fileName[aux_fileName.length-1]===extension && aux_fileName.length>1){
             //console.log(fileName);
             return fileName;
-         } // endif - fileName has the right extention
+         } // endif - fileName has the right extension
       }); // end - filter data
    node(null, data_filtered);
    }); // end - readdir

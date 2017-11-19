@@ -1,0 +1,59 @@
+
+# LEARN YOU THE NODE.JS FOR MUCH WIN!
+
+## HTTP CLIENT (Exercise 7 of 13)
+
+
+Your submission results compared to the expected:
+
+                 ACTUAL                                 EXPECTED                
+────────────────────────────────────────────────────────────────────────────────
+
+   "Slabs"                             ==    "Slabs"                            
+   "Dinky-di"                          ==    "Dinky-di"                         
+   "Trackies"                          ==    "Trackies"                         
+   "Digger"                            ==    "Digger"                           
+   "Metho"                             ==    "Metho"                            
+   "Parma"                             ==    "Parma"                            
+   "Chrissie"                          ==    "Chrissie"                         
+   "Blue"                              ==    "Blue"                             
+   "Good oil"                          ==    "Good oil"                         
+   "Cobber"                            ==    "Cobber"                           
+   ""                                  ==    ""                                 
+
+────────────────────────────────────────────────────────────────────────────────
+
+ ✓
+
+ Submission results match expected
+
+
+# PASS
+
+ Your solution to HTTP CLIENT passed!
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+
+    var http = require('http')
+    
+    http.get(process.argv[2], function (response) {
+      response.setEncoding('utf8')
+      response.on('data', console.log)
+      response.on('error', console.error)
+    }).on('error', console.error)
+
+─────────────────────────────────────────────────────────────────────────────
+ You have 6 challenges left.
+
+ Type 'learnyounode' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: learnyounode print
+  » To execute your program in a test environment, run: learnyounode run
+    program.js
+  » To verify your program, run: learnyounode verify program.js
+  » For help run: learnyounode help
+
