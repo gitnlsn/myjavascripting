@@ -1,0 +1,65 @@
+
+# LEARN YOU THE NODE.JS FOR MUCH WIN!
+
+## HTTP COLLECT (Exercise 8 of 13)
+
+
+Your submission results compared to the expected:
+
+────────────────────────────────────────────────────────────────────────────────
+
+1.  ACTUAL:    "309"
+1.  EXPECTED:  "309"
+
+2.  ACTUAL:    "Trent from punchy cut lunch commando also as dry as a pint. You little ripper mickey mouse mate no worries she'll be right billabong. Shazza got us some barbie bloody she'll be right trackies."
+2.  EXPECTED:  "Trent from punchy cut lunch commando also as dry as a pint. You little ripper mickey mouse mate no worries she'll be right billabong. Shazza got us some barbie bloody she'll be right trackies."
+
+3.  ACTUAL:    "Grab us a ten clicks away piece of piss she'll be right roo. Gutful of strides bloody stands out like a bush telly. "
+3.  EXPECTED:  "Grab us a ten clicks away piece of piss she'll be right roo. Gutful of strides bloody stands out like a bush telly. "
+
+4.  ACTUAL:    ""
+4.  EXPECTED:  ""
+
+
+────────────────────────────────────────────────────────────────────────────────
+
+ ✓
+
+ Submission results match expected
+
+
+# PASS
+
+ Your solution to HTTP COLLECT passed!
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+
+    var http = require('http')
+    var bl = require('bl')
+    
+    http.get(process.argv[2], function (response) {
+      response.pipe(bl(function (err, data) {
+        if (err) {
+          return console.error(err)
+        }
+        data = data.toString()
+        console.log(data.length)
+        console.log(data)
+      }))
+    })
+
+─────────────────────────────────────────────────────────────────────────────
+ You have 5 challenges left.
+
+ Type 'learnyounode' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: learnyounode print
+  » To execute your program in a test environment, run: learnyounode run
+    program.js
+  » To verify your program, run: learnyounode verify program.js
+  » For help run: learnyounode help
+
