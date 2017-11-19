@@ -1,0 +1,106 @@
+
+# LEARN YOU THE NODE.JS FOR MUCH WIN!
+
+## HTTP UPPERCASERER (Exercise 12 of 13)
+
+Received data:  Spit the dummy
+
+Changed  data:  SPIT THE DUMMY
+
+
+Your submission results compared to the expected:
+
+                 ACTUAL                                 EXPECTED                
+────────────────────────────────────────────────────────────────────────────────
+
+   "SPIT THE DUMMY"                    ==    "SPIT THE DUMMY"                   
+Received data:  Tucker
+
+Changed  data:  TUCKER
+
+   "TUCKER"                            ==    "TUCKER"                           
+Received data:  Bloody oath!
+
+Changed  data:  BLOODY OATH!
+
+   "BLOODY OATH!"                      ==    "BLOODY OATH!"                     
+Received data:  Bush oyster
+
+Changed  data:  BUSH OYSTER
+
+   "BUSH OYSTER"                       ==    "BUSH OYSTER"                      
+Received data:  Bull bar
+
+Changed  data:  BULL BAR
+
+   "BULL BAR"                          ==    "BULL BAR"                         
+Received data:  Rubbish
+
+Changed  data:  RUBBISH
+
+   "RUBBISH"                           ==    "RUBBISH"                          
+Received data:  G'day
+
+Changed  data:  G'DAY
+
+   "G'DAY"                             ==    "G'DAY"                            
+Received data:  Wuss
+
+Changed  data:  WUSS
+
+   "WUSS"                              ==    "WUSS"                             
+Received data:  Ugg
+
+Changed  data:  UGG
+
+   "UGG"                               ==    "UGG"                              
+Received data:  Bunyip
+
+Changed  data:  BUNYIP
+
+   "BUNYIP"                            ==    "BUNYIP"                           
+   ""                                  ==    ""                                 
+
+────────────────────────────────────────────────────────────────────────────────
+
+ ✓
+
+ Submission results match expected
+
+
+# PASS
+
+ Your solution to HTTP UPPERCASERER passed!
+
+ Here's the official solution in case you want to compare notes:
+
+─────────────────────────────────────────────────────────────────────────────
+
+    var http = require('http')
+    var map = require('through2-map')
+    
+    var server = http.createServer(function (req, res) {
+      if (req.method !== 'POST') {
+        return res.end('send me a POST\n')
+      }
+    
+      req.pipe(map(function (chunk) {
+        return chunk.toString().toUpperCase()
+      })).pipe(res)
+    })
+    
+    server.listen(Number(process.argv[2]))
+
+─────────────────────────────────────────────────────────────────────────────
+ You have one challenge left.
+
+ Type 'learnyounode' to show the menu.
+
+─────────────────────────────────────────────────────────────────────────────
+
+  » To print these instructions again, run: learnyounode print
+  » To execute your program in a test environment, run: learnyounode run
+    program.js
+  » To verify your program, run: learnyounode verify program.js
+  » For help run: learnyounode help
+
